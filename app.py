@@ -48,7 +48,7 @@ with tab1:
             
             try:
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash-preview-05-20", # 최신 모델 사용
+                    model="gemini-2.0-flash", # 최신 모델 사용
                     contents=prompt,
                     config=types.GenerateContentConfig(
                         tools=[types.Tool(google_search=types.GoogleSearchRetrieval())],
